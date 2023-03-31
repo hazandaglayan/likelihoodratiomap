@@ -13,7 +13,7 @@ This directory contains the codes of likelihood ratio (LR) map for exoplanet det
 * test_roc_curve.ipynb: test ROC curve suggestion using likelihood ratio map.
 
 ### CITE:
-Please cite "Likelihood ratio map for direct exoplanet detection" (https://doi.org/10.48550/arXiv.2210.10609) (doi: 10.1109/IPAS55744.2022.10052997)
+Please cite "Likelihood ratio map for direct exoplanet detection" (https://doi.org/10.48550/arXiv.2210.10609) (https://doi.org/10.1109/IPAS55744.2022.10052997)
 
 Please also provide a link to this webpage in your paper (https://github.com/hazandaglayan/likelihoodratiomap.git)
 
