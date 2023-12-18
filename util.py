@@ -130,8 +130,16 @@ def pixels_in_annulus(shape, center, inner_radius, outer_radius):
     """
     ys, xs = np.indices(shape)
     mask = mask_annulus(shape, center, inner_radius, outer_radius)
+           
     pixels_list = []
     for pixel in zip(ys[mask], xs[mask]):
         pixels_list.append(pixel)
     return pixels_list
 
+def psf_cube(cube, psfn, angles, rad, theta):
+    """Creates a zero-filled cube with a copy of the reference PSF along a trajectory."""
+    #pdb.set_trace()
+    return vip.fm.cube_inject_companions(
+        np.zeros_like(cube), psfn, angles,
+        1., rad, theta=theta, verbose=False
+    )
